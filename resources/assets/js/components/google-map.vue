@@ -24,7 +24,7 @@
         watch: {
             markers(val, oldVal){
 
-                if (val && this.map) {
+                if (val.length && this.map) {
 
                     let bounds = new google.maps.LatLngBounds();
 

@@ -24,7 +24,7 @@
     export default {
         data(){
             return {
-                isOpened: false,
+                isOpened: true
             };
         },
         watch:{

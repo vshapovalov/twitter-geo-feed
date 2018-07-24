@@ -8,6 +8,7 @@
                 <input type="text" v-model="userName" class="input" placeholder="Аккаунт twitter" @keyup.enter="searchTweets">
                 <btn label="Поиск" :disabled="loading" :loading="loading" @click="searchTweets"></btn>
             </div>
+            <p v-show="!tweets.length">Твитов нет</p>
             <tweets-feed v-show="!loading" :tweets="tweets" ></tweets-feed>
         </sidebar>
     </div>
